@@ -1,0 +1,54 @@
+.sc-ion-buttons-ios-h {
+  color: #1E5cab;
+}
+
+.swiper-wrapper {
+  height: auto !important;
+  transform: none !important;
+}
+
+ion-grid {
+  width: 100%;
+  background: #eeeeef;
+}
+
+ion-checkbox {
+  --border-radius: 50%;
+  --background: #fff;
+  --background-checked: #7dba20;
+  --border-color: #7dba20;
+  --border-color-checked: #7dba20;
+  --checkbox-background-checked: #7dba20;
+  pointer-events: none !important;
+}
+
+ion-header {
+  padding-bottom: 0px !important;
+}
+
+ion-content {
+  height: 600px;
+}
+
+swiper-container {
+  height: 100%;
+}
+
+.new_msg_label {
+  height: auto;
+  padding: 0 !important;
+  font-weight: normal !important;
+}
+
+.tab_wrap {
+  margin-top: 0 !important;
+}
+
+.blueColor { 
+  --color: #4581d0 !important;
+}
+
+.inlineBlock {
+  text-decoration: none;
+  display: inline-block;
+}

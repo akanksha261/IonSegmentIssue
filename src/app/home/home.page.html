@@ -1,0 +1,29 @@
+<ion-header  class="ion-no-padding message_center_header ion-no-border">
+  <ion-grid>
+    <ion-row class="tab_wrap">
+      <ion-segment mode="md" [(ngModel)]="selectedTab" (ionChange)="segmentChange($event)" scrollable>
+        <ion-segment-button mode="md" *ngFor="let tab of tabList" [id]="tab.id" value="{{tab.index}}">
+          <ion-label class="nue">{{tab.text}}</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+<ion-content class="ion-no-padding ion-no-margin"  forceOverscroll="false">
+  <swiper-container #swiper auto-height="true" [modules]="swiperModules"
+    (slidechangetransitionstart)="slideChange()">
+    <swiper-slide>
+      <ion-label>Slide 1</ion-label>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-label>Slide 2</ion-label>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-label>Slide 3</ion-label>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-label>Slide 4</ion-label>
+    </swiper-slide>
+  </swiper-container>
+</ion-content>
